@@ -17,6 +17,7 @@
 const Route = use('Route')
 
 Route.group(() => {
+  Route.get('/', () => 'Hello Adonis');
   Route.post('api/auth/attempt', 'AuthController.logIn');
   Route.post('api/users', 'UserController.store');
 });
